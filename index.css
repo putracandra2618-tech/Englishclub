@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.navbar .nav-link {
+  color: rgb(0, 0, 0) !important;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #00d4ff !important;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url('foto/EC home 1.jpg') center/cover no-repeat;
+  position: relative;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(0,123,255,0.6), rgba(102,16,242,0.6));
+  z-index: 1;
+}
+.hero .container {
+  z-index: 2;
+}
+
+
+.carousel-layer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(0,123,255,0.5), rgba(102,16,242,0.5));
+}
+
+/* Ukuran carousel yang konsisten */
+.carousel-image-container {
+  position: relative;
+  height: 500px; /* Tinggi tetap untuk semua gambar */
+  overflow: hidden;
+}
+
+.carousel-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar mengisi container dengan proporsional */
+  object-position: center; /* Memusatkan gambar */
+}
+
+/* Responsive untuk tablet */
+@media (max-width: 768px) {
+  .carousel-image-container {
+    height: 400px;
+  }
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 576px) {
+  .carousel-image-container {
+    height: 300px;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+.teacher-card {
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.teacher-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+.teacher-img {
+  width: 180px;
+  height: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.teacher-card:hover .teacher-img {
+  transform: scale(1.05);
+}
+
+ footer {
+        background: #6d7073;
+        border-top: 1px solid #ffffff;
+        padding: 1.5rem 0;
+        font-size: 0.95rem; 
+      }
